@@ -4,6 +4,7 @@ def shopmart():
     inventory = ["apple", "banana", "soda", "chicken", "chips"]
     shopping_cart = []
 
+    print("\n===== SHOPMART SHOPPING PROGRAM =====\n")
     print("Hello! Welcome to Shopmart!")
 
     start = input("Would you like to do some shopping? (Y/N): ").upper()
@@ -19,7 +20,7 @@ def shopmart():
             if choice in inventory:
                 if choice not in shopping_cart:
                     shopping_cart.append(choice)
-                    print(f"{choice} successfully added to your cart!")
+                    print(f"{choice.capitalize()} successfully added to your cart!")
                 else:
                     print("Item already in your cart.")
             else:
@@ -31,7 +32,13 @@ def shopmart():
                 break
 
         print("\nThank you for shopping at Shopmart!")
-        print("Your shopping cart includes:", shopping_cart)
+
+        if shopping_cart:
+            print("\nYour shopping cart includes:")
+            for item in shopping_cart:
+                print("-", item)
+        else:
+            print("\nYour shopping cart is empty.")
 
     else:
         print("Thank you! Have a great day!")

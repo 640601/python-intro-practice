@@ -1,35 +1,47 @@
-# Task 1: Variable Declaration and Data Types
+# ======================================
+# TASK 1: VARIABLE DECLARATION AND DATA TYPES
+# ======================================
 
-# Declaring variables
-age = 25                # integer
-height = 5.9            # float
-name = "Elizabeth"      # string
-is_student = True       # boolean
+print("\n" + "="*40)
+print("TASK 1: VARIABLE DECLARATION")
+print("="*40)
 
-# Printing values and types
-print("Task 1: Variable Types")
+age = 25
+height = 5.9
+name = "Elizabeth"
+is_student = True
+
 print(age, type(age))
 print(height, type(height))
 print(name, type(name))
 print(is_student, type(is_student))
 
 
-# Task 2: String Manipulation
+# ======================================
+# TASK 2: STRING MANIPULATION
+# ======================================
+
+print("\n" + "="*40)
+print("TASK 2: STRING MANIPULATION")
+print("="*40)
 
 text = "hello world"
 
-print("\nTask 2: String Manipulation")
-print(text.upper())        # Converts to uppercase
-print(text.capitalize())  # Capitalizes first letter
-print(text.replace("world", "Python"))  # Replaces word
+print("Uppercase:", text.upper())
+print("Capitalized:", text.capitalize())
+print("Replace:", text.replace("world", "Python"))
 
 
-# Task 3: Basic Operations
+# ======================================
+# TASK 3: BASIC OPERATIONS
+# ======================================
+
+print("\n" + "="*40)
+print("TASK 3: BASIC OPERATIONS")
+print("="*40)
 
 a = 10
 b = 3
-
-print("\nTask 3: Basic Operations")
 
 # Arithmetic
 print("Addition:", a + b)
@@ -42,63 +54,87 @@ print("Exponent:", a ** b)
 # Comparison
 print("Greater than:", a > b)
 print("Less than:", a < b)
-print("Equal to:", a == b)
+print("Equal:", a == b)
 print("Not equal:", a != b)
 print("Greater or equal:", a >= b)
 print("Less or equal:", a <= b)
 
 # Logical
-print("Logical AND:", a > 5 and b < 5)
-print("Logical OR:", a > 5 or b > 5)
-print("Logical NOT:", not(a > 5))
+print("AND:", a > 5 and b < 5)
+print("OR:", a > 5 or b > 5)
+print("NOT:", not(a > 5))
 
 
-# Task 4: Data Collections
+# ======================================
+# TASK 4: DATA COLLECTIONS
+# ======================================
+
+print("\n" + "="*40)
+print("TASK 4: DATA COLLECTIONS")
+print("="*40)
 
 # List
 fruits = ["apple", "banana", "cherry"]
-print("\nTask 4: List")
-print(fruits)
+print("List item:", fruits[1])
 
 # Tuple
 numbers = (1, 2, 3)
-print("Tuple:", numbers)
+print("Tuple item:", numbers[2])
 
 # Dictionary
 person = {"name": "Elizabeth", "age": 25}
-print("Dictionary:", person)
+print("Dictionary item:", person["name"])
 
 
-# Task 5: Conditional Statements
+# ======================================
+# TASK 5: EXPRESSION COMBINATION
+# ======================================
 
-print("\nTask 5: Conditional Statements")
+print("\n" + "="*40)
+print("TASK 5: EXPRESSION COMBINATION")
+print("="*40)
 
-if age >= 18:
-    print("You are an adult.")
-else:
-    print("You are a minor.")
+x = 5
+y = 2
+z = 3
+
+result = (x + y) * z / y ** 2
+print("Result:", result)
 
 
-# Task 6: Loops
+# ======================================
+# TASK 6: LOOPS
+# ======================================
 
-print("\nTask 6: Loops")
+print("\n" + "="*40)
+print("TASK 6: LOOPS")
+print("="*40)
 
 # For loop
-for fruit in fruits:
-    print("Fruit:", fruit)
+for i in range(1, 6):
+    print("Number:", i)
 
 # While loop
-count = 0
-while count < 3:
-    print("Count is:", count)
+count = 1
+while count <= 5:
+    print("Count:", count)
     count += 1
 
 
-# Task 7: Functions
+# ======================================
+# TASK 7: FUNCTIONS
+# ======================================
 
-print("\nTask 7: Functions")
+print("\n" + "="*40)
+print("TASK 7: FUNCTIONS")
+print("="*40)
 
 def greet(name):
     return f"Hello, {name}!"
 
 print(greet("Elizabeth"))
+
+def add_numbers(a, b):
+    return a + b
+
+print("Sum:", add_numbers(5, 3))
